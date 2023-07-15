@@ -4,6 +4,34 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.navbar-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .navbar-toggle:focus {
+    outline: none;
+  }
+  
+  .navbar.collapsed .nav-links {
+    display: none;
+  }
+  
+@media (max-width: 1000px) {
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+}
+  
+
 .navbar {
     background-color: #4685de;
     position: fixed;
@@ -217,6 +245,7 @@ body {
     color: #fff;
 }
 
+/* Home Page Styles */
 .home {
     background-image: url('book.png');
     background-size: cover;
@@ -274,4 +303,302 @@ body {
 .home button:hover {
     background-color: #325fcb;
     background-image: linear-gradient(to right, #9B69FC, #4ae1fc);
+}
+
+/* About Page Styles */
+.about-section, .classes-we-offer, .college-prep-seminars, .articles, .attendance-tab, #body {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+p{
+    line-height: 1.5;
+}
+
+.college-prep-seminars p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.about-text, .about-video {
+    flex: 1;
+    margin: 10px;
+    width: 100%;
+    max-width: 800px; /* or adjust as needed */
+}
+
+.about-video {
+    text-align: center;
+}
+  
+  @media screen and (min-width: 1100px) {
+    .about-content {
+      flex-direction: row;
+    }
+    .about-text, .about-video {
+      text-align: left; /* align the text to the left on larger screens */
+    }
+  }
+
+@media screen and (max-width: 1099px) {
+    .about-video {
+        flex: 1;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* for 16:9 aspect ratio */
+    }
+    
+    .about-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+  
+.about-text, .about-video {
+    flex: 1;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+h2{
+    text-align: center;
+}
+
+#classes-container, #articles-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+  
+.class-tab, .article-tab {
+    background-color: #ADD8E6;
+    border: 2px solid transparent;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.class-tab:hover, .article-tab:hover {
+    transform: scale(1.03);
+    border: 2.5px solid #800080;
+}
+  
+.article-tab {
+    background-color: #ffffff;
+    color: #4B0082;
+    background-image: url('book.png');
+}
+
+.article-tab p {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #6c66d6;
+}
+
+.class-tab h3, .article-tab h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #6c66d6;
+}
+  
+#math{
+    background-image: url('math.jpeg');
+}
+
+#science{
+    background-image: url('science.jpeg');
+}
+
+#english{
+    background-image: url('english.jpeg');
+}
+
+#computer{
+    background-image: url('compsci.webp');
+}
+
+#history{
+    background-image: url('history.jpeg');
+}
+
+#music{
+    background-image: url('music.jpeg');
+}
+
+#language{
+    background-image: url('language.jpeg');
+}
+
+#finances{
+    background-image: url('finances.webp');
+}   
+
+
+#h3{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255);
+}
+
+h2 {
+    color: #6B66D6; /* Purple */
+}
+
+button {
+    background-color: #6B66D6; /* Purple */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a55c6;
+}
+  
+.map iframe {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.navbar, .footer {
+    background-color: #87CEEB; /* Sky Blue */
+}
+
+  .navbar a, .footer a {
+    color: #fff;
+}
+
+/* Cloud Carousel */
+.icon-cards {
+    position: relative;
+    width: 60vw;
+    height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    margin: 0;
+    color: white;
+    perspective: 1000px;
+    transform-origin: center;
+}
+  .icon-cards__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: translateZ(-30vw) rotateY(0);
+    -webkit-animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+  .icon-cards__content.step-animation {
+    -webkit-animation: carousel 8s infinite steps(1) forwards;
+    animation: carousel 8s infinite steps(1) forwards;
+}
+  .icon-cards__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60vw;
+    height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    transform-origin: center;
+}
+
+.icon-cards__item:nth-child(1) {
+    background: #FDD94F;
+    background-image: url("book.png");
+    transform: rotateY(0) translateZ(35vw);
+}
+  .icon-cards__item:nth-child(2) {
+    background: #F87949;
+    transform: rotateY(120deg) translateZ(35vw);
+}
+  .icon-cards__item:nth-child(3) {
+    background: #FBAB48;
+    transform: rotateY(240deg) translateZ(35vw);
+}
+  
+@-webkit-keyframes carousel {
+    0%, 17.5% {
+      transform: translateZ(-35vw) rotateY(0);
+    }
+    27.5%, 45% {
+      transform: translateZ(-35vw) rotateY(-120deg);
+    }
+    55%, 72.5% {
+      transform: translateZ(-35vw) rotateY(-240deg);
+    }
+    82.5%, 100% {
+      transform: translateZ(-35vw) rotateY(-360deg);
+    }
+}
+  
+@keyframes carousel {
+    0%, 17.5% {
+      transform: translateZ(-35vw) rotateY(0);
+    }
+    27.5%, 45% {
+      transform: translateZ(-35vw) rotateY(-120deg);
+    }
+    55%, 72.5% {
+      transform: translateZ(-35vw) rotateY(-240deg);
+    }
+    82.5%, 100% {
+      transform: translateZ(-35vw) rotateY(-360deg);
+    }
+}
+  
+#body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: #110F15;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 40px;
+    border-bottom: #05cbf2 4px solid;
+    border-top: #05cbf2 4px solid; */
 }

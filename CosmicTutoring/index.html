@@ -3,36 +3,45 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cloud-carousel/1.0.5/cloud-carousel.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="navbar-container">
-      <div class="navbar-left">
-        <a class="logo" href="#">CosmicTutoring</a>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Applications</a></li>
-          <li><a href="#">Board Members</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Fundraising</a></li>
-          <li class="dropdown">
-            <a href="#">More</a>
-            <div class="dropdown-content">
-              <a href="#">Option 1</a>
-              <a href="#">Option 2</a>
-              <a href="#">Option 3</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="navbar-right">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-discord"></i></a>
+      <button class="navbar-toggle" type="button">
+        <i class="fas fa-bars"></i> <!-- You can replace this with the icon you prefer -->
+      </button>
+      <div class="navbar-container">
+        <div class="navbar-left">
+          <a class="logo" href="#">CosmicTutoring</a>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Applications</a></li>
+            <li><a href="#">Board Members</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Fundraising</a></li>
+            <li class="dropdown">
+              <a href="#">More</a>
+              <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
       </div>
     </div>
   </nav>
@@ -40,10 +49,138 @@
   <!-- Home  -->
   <div class="home">
     <h1>CosmicTutoring</h1>
-    <p>"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</p>
+    <p>𝘌𝘥𝘶𝘤𝘢𝘵𝘪𝘰𝘯 𝘪𝘴 𝘵𝘩𝘦 𝘮𝘰𝘴𝘵 𝘱𝘰𝘸𝘦𝘳𝘧𝘶𝘭 𝘸𝘦𝘢𝘱𝘰𝘯 𝘸𝘩𝘪𝘤𝘩 𝘺𝘰𝘶 𝘤𝘢𝘯 𝘶𝘴𝘦 𝘵𝘰 𝘤𝘩𝘢𝘯𝘨𝘦 𝘵𝘩𝘦 𝘸𝘰𝘳𝘭𝘥. - <span style="font-size: 22.5px;">Nelson Mandela</span></p>
     <button>Sign Up (Parents)</button>
     <button>Sign Up (Students)</button>
     <button>Apply (Tutors)</button>
+  </div>
+
+  <!-- About CosmicTutoring -->
+  <div class="about-section">
+    <h2 id="aboutTitle">About CosmicTutoring</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+          Nullam euismod, nunc id aliquam ultricies, nunc elit
+          tincidunt nunc, vitae aliquam nunc nisl quis nunc.
+        </p>
+        <button>Meet Our Board</button>
+      </div>
+      <div class="about-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-MLPmgnIzYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Classes We Offer -->
+  <div class="classes-we-offer">
+    <h2>Classes We Offer</h2>
+    <div id="classes-container">
+      <div class="class-tab" id="math">
+        <h3>MATH</h3>
+      </div>
+      <div class="class-tab" id="science">
+        <h3>SCIENCE</h3>
+      </div>
+      <div class="class-tab" id="english">
+        <h3>ENGLISH/WRITING</h3>
+      </div>
+      <div class="class-tab" id="computer">
+        <h3>COMPUTER SCIENCE</h3>
+      </div>
+      <div class="class-tab" id="history">
+        <h3>SOCIAL STUDIES/HISTORY</h3>
+      </div>
+      <div class="class-tab" id="music">
+        <h3>MUSIC</h3>
+      </div>
+      <div class="class-tab" id="language">
+        <h3>LANGUAGE</h3>
+      </div>
+      <div class="class-tab" id="finances">
+        <h3>FINANCIAL LITERACY</h3>
+      </div>
+      <!-- add more class tabs as needed -->
+    </div>
+  </div>
+
+  <!-- College Prep Seminars -->
+  <div class="college-prep-seminars">
+    <h2>We Offer College Prep Seminars and Other Seminars Like AI/ML/Neural Networks</h2>
+    <p>At CosmicTutoring, we believe that preparation is key to success. This is why we offer a range of seminars aimed at not only equipping students with the necessary tools for college success but also at fostering skills that will serve them beyond academia. Our College Prep Seminars are designed to help students navigate the complexities of the college application process, financial aid, choosing the right major, and much more. These seminars are conducted by professionals who have a deep understanding of the higher education system and are passionate about student success.</p>
+    <p>Recognizing the rapidly evolving job market, we also offer specialized seminars in cutting-edge fields like Artificial Intelligence (AI), Machine Learning (ML), and Neural Networks. These seminars aim to introduce students to the fascinating world of technology and inspire them to consider careers in these booming industries. Students will get a taste of these complex topics in an accessible and engaging format, learning about their practical applications and the amazing possibilities they offer.</p>
+    <p>Join us at CosmicTutoring, and take the first step towards shaping your future.</p>
+  </div>
+
+  <!-- Articles -->
+  <div class="articles">
+    <h2>Articles (Coming Soon)</h2>
+    <div id="articles-container">
+      <div class="article-tab">
+        <h3>Article Title</h3>
+        <p>Article date and length</p>
+      </div>
+      <div class="article-tab">
+        <h3>Article Title</h3>
+        <p>Article date and length</p>
+      </div>
+      <div class="article-tab">
+        <h3>Article Title</h3>
+        <p>Article date and length</p>
+      </div>
+      <div class="article-tab">
+        <h3>Article Title</h3>
+        <p>Article date and length</p>
+      </div>
+      <!-- add more article tabs as needed -->
+    </div>
+  </div>
+
+  <!-- Attendance Tab -->
+  <div class="attendance-tab">
+    <p>We need both students and tutors to fill out the appropriate form after EVERY CLASS in order to verify attendance and improve our program!</p>
+    <div class="attendance-buttons">
+      <button onclick="location.href='student_form.html'">Student Form</button>
+      <button onclick="location.href='tutor_form.html'">Tutor Form</button>
+    </div>
+  </div>
+
+  <!-- Cloud Carousel -->
+  <div id="body">
+    <figure class="icon-cards mt-3">
+        <div class="icon-cards__content">
+          <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">😊</span></div>
+          <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">😊</span></div>
+          <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">😀</span></div>
+        </div>
+    </figure>
+  </div>
+
+  <!-- Map -->
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.897713979143!2d-76.84740248463426!3d39.2673289795166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81c9b5d33f9b9%3A0x94050a67a21fe4e4!2sEllicott%20City%2C%20MD%2C%20USA!5e0!3m2!1sen!2sin!4v1634049137596!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </div>
 
   <!-- Footer  -->
@@ -76,5 +213,32 @@
       &copy; 2022 by CosmicTutoring. All rights reserved.
     </p>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cloud-carousel/1.0.5/cloud-carousel.min.js"></script>
+  <script>
+    $("#carousel").CloudCarousel({
+      xPos: 480,
+      yPos: 100,
+      buttonLeft: $(".left-but"),
+      buttonRight: $(".right-but"),
+      altBox: $("#alt-text"),
+      titleBox: $("#title-text"),
+      autoRotate: 'left',
+      autoRotateDelay: 2000,
+      speed: 0.2,
+    });
+    $(function() {
+      $(".class-tab, .article-tab").on("click", function() {
+        $(this).effect("bounce", { times: 3 }, "slow");
+      });
+    });
+  </script>
+  <script>
+    document.querySelector('.navbar-toggle').addEventListener('click', function() {
+      document.querySelector('.navbar').classList.toggle('collapsed');
+    });
+  </script>  
 </body>
 </html>
+
