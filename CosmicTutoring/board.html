@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cloud-carousel/1.0.5/cloud-carousel.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="board.css">
+  <link rel="stylesheet" href="navFooter.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <button class="navbar-toggle" type="button">
+            <i class="fas fa-bars"></i> <!-- You can replace this with the icon you prefer -->
+          </button>
+          <div class="navbar-container">
+            <div class="navbar-left">
+              <a class="logo" href="#">CosmicTutoring</a>
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Applications</a></li>
+                <li><a href="#">Board Members</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Fundraising</a></li>
+                <li class="dropdown">
+                  <a href="#">More</a>
+                  <div class="dropdown-content">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-right">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+  </nav>
+  <h1 class="title">Board of Directors</h1>
+
+  <div class="tab-container">
+    <div class="tab" onclick="openTab('Raiyan')" id="defaultOpen">Raiyan Zaman</div>
+    <div class="tab" onclick="openTab('Leo')">Leo Chen</div>
+    <div class="tab" onclick="openTab('Satwik')">Satwik Kanadapathi</div>
+    <div class="tab" onclick="openTab('Krish')">Krish Pandey</div>
+  </div>
+  
+  <div id="Raiyan" class="tabcontent">
+    <h2>Raiyan Zaman, CEO/CTO</h2>
+    <img src="raiyan.jpeg" alt="Raiyan Zaman">
+    <p>Raiyan Zaman is the CEO/CTO of our company, bringing a wealth of experience in tech and leadership. His strategic vision has been crucial in setting the company's direction and driving growth.</p>
+  </div>
+  
+  <div id="Leo" class="tabcontent">
+    <h2>Leo Chen, Marketing Lead</h2>
+    <img src="url-to-image-leo.jpg" alt="Leo Chen">
+    <p>As Marketing Lead, Leo Chen has an exceptional understanding of the market landscape and customer needs. He has been instrumental in creating brand recognition and customer engagement.</p>
+  </div>
+  
+  <div id="Satwik" class="tabcontent">
+    <h2>Satwik Kanadapathi, President of Operations</h2>
+    <img src="url-to-image-satwik.jpg" alt="Satwik Kanadapathi">
+    <p>Satwik Kanadapathi, as Operations Manager, ensures the smooth running of all aspects of our company. His ability to streamline operations has had a significant impact on our efficiency and success.</p>
+  </div>
+  
+  <div id="Krish" class="tabcontent">
+    <h2>Krish Pandey, Relations/Outreach Manager</h2>
+    <img src="url-to-image-krish.jpg" alt="Krish Pandey">
+    <p>Krish Pandey, our Relations/Outreach Manager, maintains crucial relationships with partners and stakeholders. His exceptional communication skills have significantly improved our outreach efforts.</p>
+  </div>
+  <div class="footer">
+    <div class="footer-contact">
+      <p>contact@cosmictutoring.com</p>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
+    </div>
+    <div class="footer-message">
+      <h3>Have Any Questions?</h3>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Type your message here..." required></textarea>
+      <input type="submit" value="Send">
+    </div>
+    <div class="footer-subscribe">
+      <h3>Never Miss an Update</h3>
+      <input type="email" placeholder="Email*" required>
+      <input type="submit" value="Subscribe">
+    </div>
+    <p class="footer-copyright">
+      &copy; 2022 by CosmicTutoring. All rights reserved.
+    </p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cloud-carousel/1.0.5/cloud-carousel.min.js"></script>
+  <script>
+    document.querySelector('.navbar-toggle').addEventListener('click', function() {
+      document.querySelector('.navbar').classList.toggle('collapsed');
+    });
+    function openTab(tabName) {
+        let i, tabcontent, tab;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+        tab = document.getElementsByClassName("tab");
+        for (i = 0; i < tab.length; i++) {
+        tab[i].style.backgroundColor = "";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+    // $("#steps").click(function(){
+    //     window.location.href = 'steps.html';
+    // });
+  </script>  
+</body>
+</html>
