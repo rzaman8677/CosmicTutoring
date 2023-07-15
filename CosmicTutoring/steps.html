@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cloud-carousel/1.0.5/cloud-carousel.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="navFooter.css">
+  <link rel="stylesheet" href="steps.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <button class="navbar-toggle" type="button">
+            <i class="fas fa-bars"></i> <!-- You can replace this with the icon you prefer -->
+          </button>
+          <div class="navbar-container">
+            <div class="navbar-left">
+              <a class="logo" href="#">CosmicTutoring</a>
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Applications</a></li>
+                <li><a href="#">Board Members</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Fundraising</a></li>
+                <li class="dropdown">
+                  <a href="#">More</a>
+                  <div class="dropdown-content">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-right">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+  </nav>
+  <div class="steps-container">
+    <h2>How to Register</h2>
+    <p>We are fully committed to helping students achieve their educational goals. Our tutoring services are absolutely free because we believe in equal access to education for all. Here are the steps to sign up:</p>
+    <ol class="steps">
+      <li class="step">
+        <h3>01</h3>
+        <h4>Sign up Through Google Forms</h4>
+        <p>Begin by filling out our Google Forms application to get your information into our database and start the process. It's easy and straightforward!</p>
+        <a href="#" class="button">Google Forms</a>
+      </li>
+      <li class="step">
+        <h3>02</h3>
+        <h3>Receive a Confirmation Email</h3>
+        <p>Once your application is submitted, you will receive a confirmation email from contact@cosmictutoring.org. This email will verify your successful registration.</p>
+      </li>
+      <li class="step">
+        <h3>03</h3>
+        <h4>Get in Touch with Your Tutor</h3>
+        <p>Following your registration confirmation, your assigned tutor will contact you. They will provide a Zoom link for your sessions, a pretest to assess your current skills, and a brief introduction of themselves.</p>
+      </li>
+      <li class="step">
+        <h3>04</h3>
+        <h4>Engage in Tutoring Sessions</h3>
+        <p>Now, the learning begins! You'll engage in tutoring sessions with your assigned tutor until you're satisfied with your progress. Afterward, you're welcome to register for additional sessions or sign up for a new class.</p>
+      </li>
+    </ol>
+  </div>  
+  <div class="footer">
+    <div class="footer-contact">
+      <p>contact@cosmictutoring.com</p>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
+    </div>
+    <div class="footer-message">
+      <h3>Have Any Questions?</h3>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Type your message here..." required></textarea>
+      <input type="submit" value="Send">
+    </div>
+    <div class="footer-subscribe">
+      <h3>Never Miss an Update</h3>
+      <input type="email" placeholder="Email*" required>
+      <input type="submit" value="Subscribe">
+    </div>
+    <p class="footer-copyright">
+      &copy; 2022 by CosmicTutoring. All rights reserved.
+    </p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cloud-carousel/1.0.5/cloud-carousel.min.js"></script>
+  <script>
+    document.querySelector('.navbar-toggle').addEventListener('click', function() {
+      document.querySelector('.navbar').classList.toggle('collapsed');
+    });
+  </script>  
+</body>
+</html>

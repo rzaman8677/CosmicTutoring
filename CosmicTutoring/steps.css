@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 100px;
+    font-family: serif;
+}
+
+.steps-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.steps-container h2 {
+  color: #4685de;
+}
+
+.steps-container p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.steps {
+  list-style-type: none;
+  padding: 0;
+}
+
+.step {
+  background-color: #f3f3f3;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+  color: #4685de;
+}
+
+.step h4 {
+  color: #be05f2;
+}
+
+.step p {
+  color: #333;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #be05f2;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a303c7;
+}
