@@ -11,40 +11,34 @@
   <link rel="stylesheet" href="navFooter.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-          <button class="navbar-toggle" type="button">
-            <i class="fas fa-bars"></i> <!-- You can replace this with the icon you prefer -->
-          </button>
-          <div class="navbar-container">
-            <div class="navbar-left">
-              <a class="logo" href="#">CosmicTutoring</a>
-              <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="application.html">Applications</a></li>
-                <li><a href="board.html">Board Members</a></li>
-                <!-- <li><a href="#">Events</a></li>
-                <li><a href="#">Fundraising</a></li>
-                <li class="dropdown">
-                  <a href="#">More</a>
-                  <div class="dropdown-content">
-                    <a href="#">Option 1</a>
-                    <a href="#">Option 2</a>
-                    <a href="#">Option 3</a>
-                  </div>
-                </li> -->
-              </ul>
-            </div>
-            <div class="navbar-right">
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-tiktok"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-discord"></i></a>
-            </div>
-          </div>
-        </div>
+  <nav class="navbar">
+    <button class="navbar-toggle" type="button">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <a class="logo" href="#">CosmicTutoring</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="application.html">Applications</a></li>
+      <li><a href="board.html">Board Members</a></li>
+      <li class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+      </li>
+    </ul>
+    <div class="navbar-right">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
+    </div>
   </nav>
   <h1 class="title">Board of Directors</h1>
 
@@ -111,9 +105,6 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cloud-carousel/1.0.5/cloud-carousel.min.js"></script>
   <script>
-    document.querySelector('.navbar-toggle').addEventListener('click', function() {
-      document.querySelector('.navbar').classList.toggle('collapsed');
-    });
     function openTab(tabName) {
         let i, tabcontent, tab;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -126,13 +117,8 @@
         }
         document.getElementById(tabName).style.display = "block";
     }
-
-    // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
-
-    // $("#steps").click(function(){
-    //     window.location.href = 'steps.html';
-    // });
   </script>  
+  <script src="nav.js"></script>
 </body>
 </html>

@@ -8,48 +8,43 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navFooter.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="navbar-container">
-      <button class="navbar-toggle" type="button">
-        <i class="fas fa-bars"></i> <!-- You can replace this with the icon you prefer -->
-      </button>
-      <div class="navbar-container">
-        <div class="navbar-left">
-          <a class="logo" href="#">CosmicTutoring</a>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="application.html">Applications</a></li>
-            <li><a href="board.html">Board Members</a></li>
-            <!-- <li><a href="#">Events</a></li>
-            <li><a href="#">Fundraising</a></li>
-            <li class="dropdown">
-              <a href="#">More</a>
-              <div class="dropdown-content">
-                <a href="#">Option 1</a>
-                <a href="#">Option 2</a>
-                <a href="#">Option 3</a>
-              </div> -->
-            </li>
-          </ul>
-        </div>
-        <div class="navbar-right">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-discord"></i></a>
-        </div>
-      </div>
+    <button class="navbar-toggle" type="button">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <a class="logo" href="#">CosmicTutoring</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="application.html">Applications</a></li>
+      <li><a href="board.html">Board Members</a></li>
+      <li class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+      </li>
+    </ul>
+    <div class="navbar-right">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
     </div>
   </nav>
 
   <!-- Home  -->
   <div class="home">
     <h1>CosmicTutoring</h1>
-    <p>𝘌𝘥𝘶𝘤𝘢𝘵𝘪𝘰𝘯 𝘪𝘴 𝘵𝘩𝘦 𝘮𝘰𝘴𝘵 𝘱𝘰𝘸𝘦𝘳𝘧𝘶𝘭 𝘸𝘦𝘢𝘱𝘰𝘯 𝘸𝘩𝘪𝘤𝘩 𝘺𝘰𝘶 𝘤𝘢𝘯 𝘶𝘴𝘦 𝘵𝘰 𝘤𝘩𝘢𝘯𝘨𝘦 𝘵𝘩𝘦 𝘸𝘰𝘳𝘭𝘥. - <span style="font-size: 22.5px;">Nelson Mandela</span></p>
+    <p><em>Education is the most powerful weapon you can utilize to transform the world</em> - <span style="font-size: 22.5px;">Nelson Mandela</span></p>
     <button id="signup">Sign Up (Parents & Students)</button>
     <button id="tutors">Apply (Tutors)</button>
     <button id="leaders">Apply (Leadership)</button>
@@ -235,9 +230,6 @@
     });
   </script>
   <script>
-    document.querySelector('.navbar-toggle').addEventListener('click', function() {
-      document.querySelector('.navbar').classList.toggle('collapsed');
-    });
     $("#board").click(function(){
         window.location.href = 'board.html';
     });
@@ -251,6 +243,7 @@
         window.location.href = 'board.html';
     });
   </script>  
+  <script src="nav.js"></script>
 </body>
 </html>
 
