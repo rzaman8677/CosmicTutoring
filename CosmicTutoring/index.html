@@ -19,10 +19,10 @@
         <div class="navbar-left">
           <a class="logo" href="#">CosmicTutoring</a>
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Applications</a></li>
-            <li><a href="#">Board Members</a></li>
-            <li><a href="#">Events</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="application.html">Applications</a></li>
+            <li><a href="board.html">Board Members</a></li>
+            <!-- <li><a href="#">Events</a></li>
             <li><a href="#">Fundraising</a></li>
             <li class="dropdown">
               <a href="#">More</a>
@@ -30,7 +30,7 @@
                 <a href="#">Option 1</a>
                 <a href="#">Option 2</a>
                 <a href="#">Option 3</a>
-              </div>
+              </div> -->
             </li>
           </ul>
         </div>
@@ -50,9 +50,9 @@
   <div class="home">
     <h1>CosmicTutoring</h1>
     <p>𝘌𝘥𝘶𝘤𝘢𝘵𝘪𝘰𝘯 𝘪𝘴 𝘵𝘩𝘦 𝘮𝘰𝘴𝘵 𝘱𝘰𝘸𝘦𝘳𝘧𝘶𝘭 𝘸𝘦𝘢𝘱𝘰𝘯 𝘸𝘩𝘪𝘤𝘩 𝘺𝘰𝘶 𝘤𝘢𝘯 𝘶𝘴𝘦 𝘵𝘰 𝘤𝘩𝘢𝘯𝘨𝘦 𝘵𝘩𝘦 𝘸𝘰𝘳𝘭𝘥. - <span style="font-size: 22.5px;">Nelson Mandela</span></p>
-    <button>Sign Up (Parents)</button>
-    <button>Sign Up (Students)</button>
-    <button>Apply (Tutors)</button>
+    <button id="signup">Sign Up (Parents & Students)</button>
+    <button id="tutors">Apply (Tutors)</button>
+    <button id="leaders">Apply (Leadership)</button>
   </div>
 
   <!-- About CosmicTutoring -->
@@ -86,7 +86,7 @@
           Nullam euismod, nunc id aliquam ultricies, nunc elit
           tincidunt nunc, vitae aliquam nunc nisl quis nunc.
         </p>
-        <button>Meet Our Board</button>
+        <button id="board">Meet Our Board</button>
       </div>
       <div class="about-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-MLPmgnIzYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -237,6 +237,18 @@
   <script>
     document.querySelector('.navbar-toggle').addEventListener('click', function() {
       document.querySelector('.navbar').classList.toggle('collapsed');
+    });
+    $("#board").click(function(){
+        window.location.href = 'board.html';
+    });
+    $("#signup").click(function(){
+        window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc4UnuFI845fdVgxaJt9ytH0ajyCcnXEuCfWtW3D4DnXZxVBA/viewform?usp=sf_link';
+    });
+    $("#tutors").click(function(){
+        window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfHe0tsMZaxXGr3v-EWfsRPqLTn6v_-JxYQmVXVUDQKeYR7Pg/viewform?usp=sf_link';
+    });
+    $("#leaders").click(function(){
+        window.location.href = 'board.html';
     });
   </script>  
 </body>
