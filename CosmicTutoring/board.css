@@ -8,7 +8,7 @@ body {
 
 @media screen and (max-width: 1099px) {
     .title {
-        padding-top: 50px;
+        padding-top: 90px;
     }
 }
   
@@ -61,12 +61,16 @@ body {
     margin-bottom: 50px;
   }
   
-  button{
-    font-size: calc(0.56vw + 0.56vh + 0.2cm);
+  button, .tab{
+    font-size: calc(0.6vw + 0.6vh + 0.2cm);
+  }
+
+  .tab{
+    margin: 4px;
   }
   
   @media screen and (max-width: 1099px) {
-    button{
+    button, .tab{
         font-size: calc(1.05vw + 1.05vh + 0.1cm);
     }
   }

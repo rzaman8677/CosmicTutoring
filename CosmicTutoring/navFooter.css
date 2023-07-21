@@ -99,16 +99,16 @@ textarea, input{
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    height: calc(2vw + 2vh +  0.05cm);
-    width: calc(2vw + 2vh + 0.1cm);
+    height: calc(2.35vw + 2.35vh +  0.05cm);
+    width: calc(3.5vw + 3.5vh + 0.1cm);
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 100;
   }
   .navbar-toggle div {
-    width: 30px;
-    height: 3px;
+    width: calc(3.5vw + 3.5vh + 0.1cm);;
+    height: 6px;
     background-color: #fff;
     border-radius: 5px;
   }
@@ -118,7 +118,7 @@ textarea, input{
   .navbar .social-icons {
     display: none; /* Hide social media icons inside nav-links */
   }
-  @media (max-width: 1000px) {
+@media (max-width: 1000px) {
     .navbar {
       flex-direction: column;
       justify-content: center;
