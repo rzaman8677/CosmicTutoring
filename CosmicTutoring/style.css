@@ -399,15 +399,17 @@ nav button:hover {
 
 .icon-cards__item:nth-child(1) {
     background: #FDD94F;
-    background-image: url("book.png");
+    background-image: url("cos1.jpg");
     transform: rotateY(0) translateZ(35vw);
 }
   .icon-cards__item:nth-child(2) {
     background: #F87949;
+    background-image: url("book.png");
     transform: rotateY(120deg) translateZ(35vw);
 }
   .icon-cards__item:nth-child(3) {
     background: #FBAB48;
+    background-image: url("cos3.jpg");
     transform: rotateY(240deg) translateZ(35vw);
 }
   
