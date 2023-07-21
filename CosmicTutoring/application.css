@@ -1,83 +1,116 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f6f6f6;
-    line-height: 1.5;
-    padding: 0px;
-    margin: 0px;
-    padding-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f6f6f6;
+  line-height: 1.5;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 100px;
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+  body{
+      padding-top: calc(6vh + 6vw);
+  }
 }
 
 #content{
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-  
+
 .application-section {
-    max-width: 800px;
-    margin-top: 50px;
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin-top: 50px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-  
-  .application-section h1 {
-    color: #4685de;
-    margin-bottom: 10px;
+
+.application-section h1 {
+  color: #4685de;
+  margin-bottom: 10px;
+}
+
+.application-section p {
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-btn {
+  margin-bottom: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #4685de;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.apply-btn {
+  /* Rest of your CSS */
+  transition: transform 0.3s ease;
+  background-color: #325fcb;
+  background-image: linear-gradient(to right, #4ae1fc, #9B69FC);
+}
+
+.apply-btn:hover {
+  transform: scale(1.035);
+  background-color: #325fcb;
+  background-image: linear-gradient(to right, #9B69FC, #4ae1fc);
+}  
+
+.tab-section {
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tab {
+  margin-bottom: 20px;
+}
+
+.tab h2 {
+  color: #be05f2;
+  margin-bottom: 10px;
+}
+
+button{
+  font-size: calc(0.56vw + 0.56vh + 0.2cm);
+}
+
+@media screen and (max-width: 1099px) {
+  button{
+      font-size: calc(1.05vw + 1.05vh + 0.1cm);
   }
-  
-  .application-section p {
-    margin-bottom: 20px;
+}
+
+.footer-contact p {
+  font-size: calc(0.6vw + 0.6vh + 0.2cm) !important;
+}
+
+p.footer-copyright{
+  font-size: calc(0.6vw + 0.6vh + 0.2cm) !important;
+}
+
+@media screen and (max-width: 1099px) {
+  .footer-contact p{
+      font-size: calc(1.8vw + 1.2vh + 0.1cm) !important;
   }
-  
-  .button-group {
-    display: flex;
-    flex-direction: column;
+  p.footer-copyright {
+    font-size: calc(1.8vw + 1.2vh + 0.1cm) !important;
   }
-  
-  .apply-btn {
-    margin-bottom: 10px;
-    padding: 10px;
-    color: white;
-    background-color: #4685de;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .apply-btn {
-    /* Rest of your CSS */
-    transition: transform 0.3s ease;
-    background-color: #325fcb;
-    background-image: linear-gradient(to right, #4ae1fc, #9B69FC);
-  }
-  
-  .apply-btn:hover {
-    transform: scale(1.035);
-    background-color: #325fcb;
-    background-image: linear-gradient(to right, #9B69FC, #4ae1fc);
-  }  
-  
-  .tab-section {
-    max-width: 800px;
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .tab {
-    margin-bottom: 20px;
-  }
-  
-  .tab h2 {
-    color: #be05f2;
-    margin-bottom: 10px;
-  }
-  
+}

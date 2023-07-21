@@ -5,6 +5,12 @@ body {
     padding-top: 100px;
     margin: 0px;
 }
+
+@media screen and (max-width: 1099px) {
+    .title {
+        padding-top: 50px;
+    }
+}
   
   .title {
     text-align: center;
@@ -55,3 +61,21 @@ body {
     margin-bottom: 50px;
   }
   
+  button{
+    font-size: calc(0.56vw + 0.56vh + 0.2cm);
+  }
+  
+  @media screen and (max-width: 1099px) {
+    button{
+        font-size: calc(1.05vw + 1.05vh + 0.1cm);
+    }
+  }
+  .footer-contact p, p.footer-copyright {
+    font-size: calc(0.6vw + 0.6vh + 0.2cm) !important;
+  }
+  
+  @media screen and (max-width: 1099px) {
+    .footer-contact p, p.footer-copyright {
+        font-size: calc(1.2vw + 1.2vh + 0.1cm) !important;
+    }
+  }

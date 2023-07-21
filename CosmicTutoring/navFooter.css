@@ -2,7 +2,47 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+i{
+    width: 15%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 50%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    margin: 5px;
+}
+
+.myIcon {
+  font-size: calc(1.2vw + 1.2vh + 0.1cm); 
+  
+}
+
+@media screen and (max-width: 1099px) {
+    .myIcon {
+        font-size: calc(1.6vw + 1.6vh + 0.1cm);
+    }
+}
+
+h3{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+textarea, input{
+  font-size: calc(0.56vw + 0.56vh + 0.2cm);
+}
+
+@media screen and (max-width: 1099px) {
+  textarea, input{
+      font-size: calc(1.05vw + 1.05vh + 0.1cm);
   }
+}
+
   body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -59,8 +99,8 @@
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    height: 25px;
-    width: 30px;
+    height: calc(2vw + 2vh +  0.05cm);
+    width: calc(2vw + 2vh + 0.1cm);
     background: transparent;
     border: none;
     cursor: pointer;
@@ -83,9 +123,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-bottom: 500px;
     }
     .navbar .logo {
-      font-size: 5vh;
+      font-size: 3vh;
       position: initial;
       transform: initial;
     }
@@ -93,7 +134,7 @@
       flex-direction: column;
       width: 100%;
       position: fixed;
-      top: 90px;
+      top: 83%;
       left: 0;
       height: calc(100% - 70px);
       background: skyblue;
@@ -161,8 +202,29 @@
 }
 
 .footer-message textarea {
-    height: 80px;
+    line-height: 2;
+    height: fit-content;
     resize: none;
+}
+
+@media screen and (max-width: 1099px) {
+  .footer-contact, .footer-copyright{
+      font-size: calc(4.2vw + 1.2vh + 0.1cm) !important;
+  }
+}
+
+.footer-contact, .footer-copyright {
+  font-size: calc(0.65vw + 0.65vh + 0.2cm) !important;
+}
+
+h3{
+  font-size: calc(0.8vw + 0.8vh + 0.25cm);
+}
+
+@media screen and (max-width: 1099px) {
+  h3{
+      font-size: calc(1.4vw + 1.4vh + 0.1cm);
+  }
 }
 
 .footer-message input[type="submit"] {
